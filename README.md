@@ -4,4 +4,4 @@ iOS购物车Demo，支持：
 2，商品数量的增减；
 3，商品的删除
 
-<img src="http://www.w3school.com.cn/i/eg_tulip.jpg" width="200" height="200" />
+<img src="https://github.com/youngerhaha/ShoppingCartDemo/blob/master/ShoppingCart.gif" width="370" height="662" align="middle" />
