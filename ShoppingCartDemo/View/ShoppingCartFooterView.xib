@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShoppingCartFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SVh-IS-noE">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已选择2件商品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfT-i3-7J0">
+                            <rect key="frame" x="145.5" y="8" width="81" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="应付：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cg-Qo-ZU9">
+                            <rect key="frame" x="234.5" y="8" width="37" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVd-Lx-YD8">
+                            <rect key="frame" x="271.5" y="8" width="30.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.98431372549999996" green="0.0" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="MfT-i3-7J0" firstAttribute="centerY" secondItem="SVh-IS-noE" secondAttribute="centerY" id="LpB-fT-Rfs"/>
+                        <constraint firstItem="fVd-Lx-YD8" firstAttribute="leading" secondItem="6cg-Qo-ZU9" secondAttribute="trailing" id="Sek-ZD-Vko"/>
+                        <constraint firstItem="6cg-Qo-ZU9" firstAttribute="centerY" secondItem="SVh-IS-noE" secondAttribute="centerY" id="YYF-IO-elT"/>
+                        <constraint firstItem="6cg-Qo-ZU9" firstAttribute="leading" secondItem="MfT-i3-7J0" secondAttribute="trailing" constant="8" id="ltE-kw-XEw"/>
+                        <constraint firstAttribute="trailing" secondItem="fVd-Lx-YD8" secondAttribute="trailing" constant="18" id="phQ-8g-ZI9"/>
+                        <constraint firstItem="fVd-Lx-YD8" firstAttribute="centerY" secondItem="SVh-IS-noE" secondAttribute="centerY" id="r13-3d-CKW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="SVh-IS-noE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4Fh-PS-5Ue"/>
+                <constraint firstItem="SVh-IS-noE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4og-vs-5Cy"/>
+                <constraint firstAttribute="bottom" secondItem="SVh-IS-noE" secondAttribute="bottom" id="uio-Dm-p1b"/>
+                <constraint firstAttribute="trailing" secondItem="SVh-IS-noE" secondAttribute="trailing" id="vEt-FA-Nhx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="quantityLabel" destination="MfT-i3-7J0" id="y8p-tg-n6t"/>
+                <outlet property="sumOfMoneyLabel" destination="fVd-Lx-YD8" id="TQ0-S3-4RJ"/>
+            </connections>
+            <point key="canvasLocation" x="353" y="238.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
